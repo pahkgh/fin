@@ -6,9 +6,11 @@
   position: absolute;
   right: 0;
   margin-top: 0.5rem;
-  width: calc(100vw - 3rem);
+  //width: calc(100vw - 1rem);
   max-height: 500px;
   overflow: auto;
+  width: -webkit-fill-available;
+  width: -moz-available;
 }
 
 #suggestions a {
@@ -55,7 +57,7 @@
 
 @include media-breakpoint-up(sm) {
   #suggestions {
-    width: 30rem;
+
   }
 
   #suggestions a {
@@ -71,7 +73,7 @@
   }
 
   #suggestions span:nth-child(2) {
-    width: 19rem;
+    width: 60rem;
     padding-left: 1rem;
   }
 }

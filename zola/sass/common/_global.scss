@@ -46,6 +46,22 @@ h6,
   }
 }
 
+h1.collapsible-section,
+h2.collapsible-section,
+h3.collapsible-section,
+h4.collapsible-section,
+h5.collapsible-section,
+h6.collapsible-section,
+.h1.collapsible-section,
+.h2.collapsible-section,
+.h3.collapsible-section,
+.h4.collapsible-section,
+.h5.collapsible-section,
+.h6.collapsible-section {
+  margin: 0.5em 24px 0.5em 0;
+}
+
+
 .home h1 {
   /* font-size: calc(1.375rem + 1.5vw); */
   font-size: calc(1.875rem + 1.5vw);
@@ -91,8 +107,24 @@ body {
 
 .docs-sidebar {
   order: 2;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
+.docs-sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+@supports ((position:-webkit-sticky) or (position:sticky)) {
+  .docs-sidebar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 4rem;
+    height: calc(100vh - 4rem);
+    overflow-y: auto;
+  }
+}
 @include media-breakpoint-up(lg) {
   .docs-sidebar {
     order: 0;
@@ -105,7 +137,7 @@ body {
       position: sticky;
       top: 4rem;
       z-index: 1000;
-      height: calc(100vh - 4rem);
+      //height: calc(100vh - 4rem);
     }
   }
 }
@@ -123,7 +155,7 @@ body {
 @include media-breakpoint-up(lg) {
   @supports ((position: -webkit-sticky) or (position: sticky)) {
     .docs-links {
-      max-height: calc(100vh - 4rem);
+      //max-height: calc(100vh - 4rem);
       overflow-y: scroll;
     }
   }
@@ -133,7 +165,7 @@ body {
   .docs-links {
     display: block;
     width: auto;
-    margin-right: -1.5rem;
+    //margin-right: -1.5rem;
     padding-bottom: 4rem;
   }
 }
@@ -153,7 +185,7 @@ body {
 }
 
 .docs-content {
-  padding-bottom: 3rem;
+  padding-bottom: 0rem;
   order: 1;
 }
 
@@ -229,4 +261,20 @@ article {
   hr {
     margin: 3rem 0;
   }
+}
+
+.folder {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  margin: 0 0.5em 0.5em 0;
+}
+
+@font-face {
+  font-family: "Virgil";
+  src: url("https://excalidraw.com/Virgil.woff2");
+}
+@font-face {
+  font-family: "Cascadia";
+  src: url("https://excalidraw.com/Cascadia.woff2");
 }
