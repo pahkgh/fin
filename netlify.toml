@@ -26,13 +26,13 @@ ZOLA_VERSION = "0.16.1"
 # (Optional, default title) How to sort notes inside each section on the right sidebar ("date" or "title"). Subsections on side bar are sorted by title, the sort order cannot be changed.
 SORT_BY = "title"
 # (Optional) Google Analytics Measurement ID
-GANALYTICS = "G-9EJCNPXBF6"
+GANALYTICS = ""
 # (Optional, default true) Slugify URLs. Put "" to disable.
 SLUGIFY = "y"
 # (Optional, default true) Shows knowledge graph on home page. Put "" to disable.
-HOME_GRAPH = "y"
+HOME_GRAPH = ""
 # (Optional, default true) Shows knowledge graph on every page. Put "" to disable.
-PAGE_GRAPH = "y"
+PAGE_GRAPH = ""
 # (Optional, default true) Whether to use standard Markdown strict line breaks.
 STRICT_LINE_BREAKS = ""
 # (Optional, default false) Whether sidebar sections should be collapsed by default.
@@ -83,4 +83,4 @@ GRAPH_OPTIONS = """
 				randomSeed: 123, 
 			},
         }
-        """
+        """  
