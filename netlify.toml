@@ -41,7 +41,7 @@ SIDEBAR_COLLAPSED = ""
 FOOTER = ""
 # (Optional, default main) Root section name.
 ROOT_SECTION_NAME = "me"
-COMMENTS_GISCUSS = "y"
+COMMENTS_GISCUSS = ""
 EDIT_PAGE = "y"
 EDIT_PAGE_BUTTON_TEXT = "Change my mind!"
 LOCAL_GRAPH = "y"
